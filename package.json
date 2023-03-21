@@ -1,6 +1,6 @@
 {
-  "name": "components-fields-avatar",
-  "repository": "https://github.com/elsiosanchez/fields-avatar.git",
+  "name": "components-molecule-action-panel",
+  "repository": "https://github.com/elsiosanchez/molecule-action-panel.git",
   "author": "elsiosanchez <elsiosanches@gmail.com>",
   "private": true,
   "scripts": {
