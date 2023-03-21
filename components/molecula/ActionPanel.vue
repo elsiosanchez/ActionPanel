@@ -80,7 +80,7 @@ const props = defineProps({
   },
   actionCheck: {
     type: Function,
-    default: (Check) => {
+    default: (check) => {
       console.info('Implement the Check Method', check);
     },
   },
