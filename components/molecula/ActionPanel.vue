@@ -19,7 +19,7 @@
             </svg>
           </template>
         </el-button>
-        <el-button type="danger">
+        <el-button type="danger" @click="actionClose">
           <template #icon>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +33,7 @@
             </svg>
           </template>
         </el-button>
-        <el-button type="primary">
+        <el-button type="primary" @click="actionCheck">
           <template #icon>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -68,8 +68,20 @@ const props = defineProps({
   },
   actionClear: {
     type: Function,
-    default: (pageNumber) => {
-      console.info('implement change page number method', pageNumber);
+    default: (clean) => {
+      console.info('Implement the Clean Method', clean);
+    },
+  },
+  actionClose: {
+    type: Function,
+    default: (close) => {
+      console.info('Implement the Close Method', close);
+    },
+  },
+  actionCheck: {
+    type: Function,
+    default: (Check) => {
+      console.info('Implement the Check Method', check);
     },
   },
   disabledClear: {
